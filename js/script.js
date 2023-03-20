@@ -35,6 +35,23 @@ if(age < 18) {
 }
 console.log('prezzo finale', newPrice);
 
+let resoconto =`
+Grazie per aver scelto la nostra Agenzia ${name},<br>
+se sei un under 18 avrai un sconto del 20%, oppure uno sconto del 40% se sei over 65,<br>
+di seguito troverai tutti i dettagli:<br>
+<br>
+<br>
+- NOME: ${name}<br>
+- COGNOME: ${lastname}<br>
+- ETA: ${age}<br>
+- KM DA PERCORRERE: ${kmUtente}<br>
+- COSTO TOTALE: ${newPrice}<br>
+
+
+
+`
+
+document.getElementById('output').innerHTML = resoconto
 
 
 
